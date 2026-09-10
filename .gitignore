@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Cviceni 07: vlastni blok ---
+# Vystupni grafy (graphs/) se do repozitare nekomituji; adresar vsak musi
+# zustat verzovany pres .gitkeep. Slozka data/ je v cerstvem klonu prazdna
+# (dataset se bere primo ze scikit-learn, hradla se generuji za behu),
+# proto ma take .gitkeep.
+graphs/*.png
+models/*.json
+!graphs/.gitkeep
+!models/.gitkeep
+# Ulozene modely (save/load do JSON) vznikaji az za behu
+*.model.json
+.vscode/
